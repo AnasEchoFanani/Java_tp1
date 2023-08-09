@@ -19,7 +19,7 @@ public class Main {
 
             System.out.print("Choix: ");
             int choix = scanner.nextInt();
-            scanner.nextLine(); // Clear the newline character
+            scanner.nextLine();
 
             switch (choix) {
                 case 1:
@@ -76,7 +76,7 @@ public class Main {
                 case 7:
                     System.out.print("ID de l'étudiant à modifier: ");
                     int idModification = scanner.nextInt();
-                    scanner.nextLine(); // Clear the newline character
+                    scanner.nextLine();
                     Etudiant etudiantModifie = etudiantMetier.selectionnerEtudiantParId(idModification);
                     if (etudiantModifie != null) {
                         System.out.print("Nouveau nom: ");
